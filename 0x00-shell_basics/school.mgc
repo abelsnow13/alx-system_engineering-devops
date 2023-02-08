@@ -1,2 +1,20 @@
 #!/bin/bash
-0 string SCHOOL school data\n!:mime School 
+file --mime-type -m school.mgc *
+
+school.mgc:         application/octet-stream
+
+ls:                    application/octet-stream
+
+thisisaschoolfile: School
+
+thisisatextfile:       text/plain
+
+file -m school.mgc *
+
+school.mgc:         data
+
+ls:                    data
+
+thisisaschoolfile: School data
+
+thisisatextfile:       ASCII text
